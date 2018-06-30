@@ -10,7 +10,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to GamingWiki</h1>
         </header>
-        <p className="App-intro">To get started, choose your favorite game.</p>
+        <p className="App-intro">To get started, choose a cool game.</p>
       </div>
     );
   }
