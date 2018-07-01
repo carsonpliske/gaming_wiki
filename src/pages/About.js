@@ -1,14 +1,17 @@
 import React, { Component } from "react";
-import "../App.css";
+import styled from "styled-components";
 
 class About extends Component {
   render() {
     return (
-      <div>
+      <AboutWrapper>
         <p> This is the about page </p>
-      </div>
+      </AboutWrapper>
     );
   }
 }
+const AboutWrapper = styled.div`
+  padding: 50px;
+`;
 
 export default About;
