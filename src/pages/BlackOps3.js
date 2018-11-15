@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-class About extends Component {
+class BlackOps3 extends Component {
   render() {
     return (
       <AboutWrapper>
-        <Headline>About</Headline>
+        <Headline>BlackOps3</Headline>
         <Text>
           {" "}
           This is the This is the about pageThis is the about pageThis is the
@@ -34,4 +34,4 @@ const Text = styled.p`
   font-size: 19px;
 `;
 
-export default About;
+export default BlackOps3;
