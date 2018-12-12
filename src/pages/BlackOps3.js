@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 class BlackOps3 extends Component {
+  componentDidMount() {
+    this.props.changeHeader("blackops3");
+  }
   render() {
     return (
       <AboutWrapper>

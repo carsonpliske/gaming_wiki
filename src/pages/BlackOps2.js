@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 class BlackOps2 extends Component {
+  componentDidMount() {
+    this.props.changeHeader("blackops2");
+  }
   render() {
     return (
       <AboutWrapper>
-        <Headline>BlackOps2</Headline>
+        <Headline className={this.props.header}>BlackOps2</Headline>
         <Text>
           {" "}
           This is the This is the about pageThis is the about pageThis is the
