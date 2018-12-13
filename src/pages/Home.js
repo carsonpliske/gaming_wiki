@@ -149,7 +149,7 @@ class Home extends Component {
             </GameBlock>
           </StyledLink>
 
-          <StyledLink to="/polk-bio">
+          {/* <StyledLink to="/polk-bio">
             <GameBlock style={polkImage}>
               <GameInfo>
                 <GameName>James K. Polk</GameName>
@@ -363,7 +363,7 @@ class Home extends Component {
                 <GameCompany>34th President</GameCompany>
               </GameInfo>
             </GameBlock>
-          </StyledLink>
+          </StyledLink> */}
 
           <StyledLink to="/jfk-bio">
             <GameBlock style={jfkImage}>
