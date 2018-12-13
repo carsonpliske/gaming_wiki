@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Credits from "../components/Credits";
 import codbo2 from "../images/codbo2.jpg";
 import codbo3 from "../images/codbo3.jpg";
 import assassin from "../images/assassinscreed.jpg";
@@ -56,415 +57,422 @@ class Home extends Component {
   }
   render() {
     return (
-      <HomeWrapper>
-        <StyledLink to="/washington-bio">
-          <GameBlock style={washingtonImage}>
-            <GameInfo>
-              <GameName>George Washington</GameName>
-              <GameCompany>1st President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+      <Outerwrapper>
+        <HomeWrapper>
+          <StyledLink to="/washington-bio">
+            <GameBlock style={washingtonImage}>
+              <GameInfo>
+                <GameName>George Washington</GameName>
+                <GameCompany>1st President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/adams-bio">
-          <GameBlock style={adamsImage}>
-            <GameInfo>
-              <GameName>John Adams</GameName>
-              <GameCompany>2nd President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/adams-bio">
+            <GameBlock style={adamsImage}>
+              <GameInfo>
+                <GameName>John Adams</GameName>
+                <GameCompany>2nd President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/jefferson-bio">
-          <GameBlock style={jeffersonImage}>
-            <GameInfo>
-              <GameName>Thomas Jefferson</GameName>
-              <GameCompany>3rd President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/jefferson-bio">
+            <GameBlock style={jeffersonImage}>
+              <GameInfo>
+                <GameName>Thomas Jefferson</GameName>
+                <GameCompany>3rd President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/madison-bio">
-          <GameBlock style={madisonImage}>
-            <GameInfo>
-              <GameName>James Madison</GameName>
-              <GameCompany>4th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/madison-bio">
+            <GameBlock style={madisonImage}>
+              <GameInfo>
+                <GameName>James Madison</GameName>
+                <GameCompany>4th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/monroe-bio">
-          <GameBlock style={monroeImage}>
-            <GameInfo>
-              <GameName>James Monroe</GameName>
-              <GameCompany>5th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/monroe-bio">
+            <GameBlock style={monroeImage}>
+              <GameInfo>
+                <GameName>James Monroe</GameName>
+                <GameCompany>5th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/quincyadams-bio">
-          <GameBlock style={quincyadamsImage}>
-            <GameInfo>
-              <GameName>John Quincy Adams</GameName>
-              <GameCompany>6th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/quincyadams-bio">
+            <GameBlock style={quincyadamsImage}>
+              <GameInfo>
+                <GameName>John Quincy Adams</GameName>
+                <GameCompany>6th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/jackson-bio">
-          <GameBlock style={jacksonImage}>
-            <GameInfo>
-              <GameName>Andrew Jackson</GameName>
-              <GameCompany>7th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/jackson-bio">
+            <GameBlock style={jacksonImage}>
+              <GameInfo>
+                <GameName>Andrew Jackson</GameName>
+                <GameCompany>7th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/vanburen-bio">
-          <GameBlock style={vanburenImage}>
-            <GameInfo>
-              <GameName>Martin van Buren</GameName>
-              <GameCompany>8th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/vanburen-bio">
+            <GameBlock style={vanburenImage}>
+              <GameInfo>
+                <GameName>Martin van Buren</GameName>
+                <GameCompany>8th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/h_harrison-bio">
-          <GameBlock style={h_harrisonImage}>
-            <GameInfo>
-              <GameName>William H. Harrison</GameName>
-              <GameCompany>9th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/h_harrison-bio">
+            <GameBlock style={h_harrisonImage}>
+              <GameInfo>
+                <GameName>William H. Harrison</GameName>
+                <GameCompany>9th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/tyler-bio">
-          <GameBlock style={tylerImage}>
-            <GameInfo>
-              <GameName>John Tyler</GameName>
-              <GameCompany>10th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/tyler-bio">
+            <GameBlock style={tylerImage}>
+              <GameInfo>
+                <GameName>John Tyler</GameName>
+                <GameCompany>10th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/polk-bio">
-          <GameBlock style={polkImage}>
-            <GameInfo>
-              <GameName>James K. Polk</GameName>
-              <GameCompany>11th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/polk-bio">
+            <GameBlock style={polkImage}>
+              <GameInfo>
+                <GameName>James K. Polk</GameName>
+                <GameCompany>11th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/taylor-bio">
-          <GameBlock style={taylorImage}>
-            <GameInfo>
-              <GameName>Zachary Taylor</GameName>
-              <GameCompany>12th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/taylor-bio">
+            <GameBlock style={taylorImage}>
+              <GameInfo>
+                <GameName>Zachary Taylor</GameName>
+                <GameCompany>12th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/fillmore-bio">
-          <GameBlock style={fillmoreImage}>
-            <GameInfo>
-              <GameName>Millard Fillmore</GameName>
-              <GameCompany>13th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/fillmore-bio">
+            <GameBlock style={fillmoreImage}>
+              <GameInfo>
+                <GameName>Millard Fillmore</GameName>
+                <GameCompany>13th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/pierce-bio">
-          <GameBlock style={pierceImage}>
-            <GameInfo>
-              <GameName>Franklin Pierce</GameName>
-              <GameCompany>14th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/pierce-bio">
+            <GameBlock style={pierceImage}>
+              <GameInfo>
+                <GameName>Franklin Pierce</GameName>
+                <GameCompany>14th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/buchanan-bio">
-          <GameBlock style={buchananImage}>
-            <GameInfo>
-              <GameName>James Buchanan</GameName>
-              <GameCompany>15th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/buchanan-bio">
+            <GameBlock style={buchananImage}>
+              <GameInfo>
+                <GameName>James Buchanan</GameName>
+                <GameCompany>15th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/lincoln-bio">
-          <GameBlock style={lincolnImage}>
-            <GameInfo>
-              <GameName>Abraham Lincoln</GameName>
-              <GameCompany>16th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/lincoln-bio">
+            <GameBlock style={lincolnImage}>
+              <GameInfo>
+                <GameName>Abraham Lincoln</GameName>
+                <GameCompany>16th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/ajohnson-bio">
-          <GameBlock style={ajohnsonImage}>
-            <GameInfo>
-              <GameName>Andrew Johnson</GameName>
-              <GameCompany>17th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/ajohnson-bio">
+            <GameBlock style={ajohnsonImage}>
+              <GameInfo>
+                <GameName>Andrew Johnson</GameName>
+                <GameCompany>17th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/grant-bio">
-          <GameBlock style={grantImage}>
-            <GameInfo>
-              <GameName>Ulysses S. Grant</GameName>
-              <GameCompany>18th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/grant-bio">
+            <GameBlock style={grantImage}>
+              <GameInfo>
+                <GameName>Ulysses S. Grant</GameName>
+                <GameCompany>18th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/hayes-bio">
-          <GameBlock style={hayesImage}>
-            <GameInfo>
-              <GameName>Rutherford Hayes</GameName>
-              <GameCompany>19th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/hayes-bio">
+            <GameBlock style={hayesImage}>
+              <GameInfo>
+                <GameName>Rutherford Hayes</GameName>
+                <GameCompany>19th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/garfield-bio">
-          <GameBlock style={garfieldImage}>
-            <GameInfo>
-              <GameName>James Garfield</GameName>
-              <GameCompany>20th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/garfield-bio">
+            <GameBlock style={garfieldImage}>
+              <GameInfo>
+                <GameName>James Garfield</GameName>
+                <GameCompany>20th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/arthur-bio">
-          <GameBlock style={arthurImage}>
-            <GameInfo>
-              <GameName>Chester Arthur</GameName>
-              <GameCompany>21st President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/arthur-bio">
+            <GameBlock style={arthurImage}>
+              <GameInfo>
+                <GameName>Chester Arthur</GameName>
+                <GameCompany>21st President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/cleveland-bio">
-          <GameBlock style={clevelandImage}>
-            <GameInfo>
-              <GameName>Grover Cleaveland</GameName>
-              <GameCompany>22nd President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/cleveland-bio">
+            <GameBlock style={clevelandImage}>
+              <GameInfo>
+                <GameName>Grover Cleaveland</GameName>
+                <GameCompany>22nd President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/harrison-bio">
-          <GameBlock style={harrisonImage}>
-            <GameInfo>
-              <GameName>Benjamin Harrison</GameName>
-              <GameCompany>23rd President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/harrison-bio">
+            <GameBlock style={harrisonImage}>
+              <GameInfo>
+                <GameName>Benjamin Harrison</GameName>
+                <GameCompany>23rd President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/cleveland-bio">
-          <GameBlock style={clevelandImage}>
-            <GameInfo>
-              <GameName>Grover Cleaveland</GameName>
-              <GameCompany>24th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/cleveland-bio">
+            <GameBlock style={clevelandImage}>
+              <GameInfo>
+                <GameName>Grover Cleaveland</GameName>
+                <GameCompany>24th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/mckinley-bio">
-          <GameBlock style={mckinleyImage}>
-            <GameInfo>
-              <GameName>William Mckinley</GameName>
-              <GameCompany>25th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/mckinley-bio">
+            <GameBlock style={mckinleyImage}>
+              <GameInfo>
+                <GameName>William Mckinley</GameName>
+                <GameCompany>25th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/roosevelt-bio">
-          <GameBlock style={rooseveltImage}>
-            <GameInfo>
-              <GameName>Theodore Roosevelt</GameName>
-              <GameCompany>26th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/roosevelt-bio">
+            <GameBlock style={rooseveltImage}>
+              <GameInfo>
+                <GameName>Theodore Roosevelt</GameName>
+                <GameCompany>26th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/taft-bio">
-          <GameBlock style={taftImage}>
-            <GameInfo>
-              <GameName>William Taft</GameName>
-              <GameCompany>27th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/taft-bio">
+            <GameBlock style={taftImage}>
+              <GameInfo>
+                <GameName>William Taft</GameName>
+                <GameCompany>27th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/wilson-bio">
-          <GameBlock style={wilsonImage}>
-            <GameInfo>
-              <GameName>Woodrow Wilson</GameName>
-              <GameCompany>28th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/wilson-bio">
+            <GameBlock style={wilsonImage}>
+              <GameInfo>
+                <GameName>Woodrow Wilson</GameName>
+                <GameCompany>28th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/harding-bio">
-          <GameBlock style={hardingImage}>
-            <GameInfo>
-              <GameName>Warren Harding</GameName>
-              <GameCompany>29th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/harding-bio">
+            <GameBlock style={hardingImage}>
+              <GameInfo>
+                <GameName>Warren Harding</GameName>
+                <GameCompany>29th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/coolidge-bio">
-          <GameBlock style={coolidgeImage}>
-            <GameInfo>
-              <GameName>Calvin Coolidge</GameName>
-              <GameCompany>30th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/coolidge-bio">
+            <GameBlock style={coolidgeImage}>
+              <GameInfo>
+                <GameName>Calvin Coolidge</GameName>
+                <GameCompany>30th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/hoover-bio">
-          <GameBlock style={hooverImage}>
-            <GameInfo>
-              <GameName>Herbet C. Hoover</GameName>
-              <GameCompany>31st President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/hoover-bio">
+            <GameBlock style={hooverImage}>
+              <GameInfo>
+                <GameName>Herbet C. Hoover</GameName>
+                <GameCompany>31st President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/fdr-bio">
-          <GameBlock style={fdrImage}>
-            <GameInfo>
-              <GameName>Franklin Roosevelt</GameName>
-              <GameCompany>32nd President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/fdr-bio">
+            <GameBlock style={fdrImage}>
+              <GameInfo>
+                <GameName>Franklin Roosevelt</GameName>
+                <GameCompany>32nd President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/truman-bio">
-          <GameBlock style={trumanImage}>
-            <GameInfo>
-              <GameName>Harry S. Truman</GameName>
-              <GameCompany>33rd President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/truman-bio">
+            <GameBlock style={trumanImage}>
+              <GameInfo>
+                <GameName>Harry S. Truman</GameName>
+                <GameCompany>33rd President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/ike-bio">
-          <GameBlock style={ikeImage}>
-            <GameInfo>
-              <GameName>Dwight Eisenhower</GameName>
-              <GameCompany>34th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/ike-bio">
+            <GameBlock style={ikeImage}>
+              <GameInfo>
+                <GameName>Dwight Eisenhower</GameName>
+                <GameCompany>34th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/jfk-bio">
-          <GameBlock style={jfkImage}>
-            <GameInfo>
-              <GameName>John F. Kennedy</GameName>
-              <GameCompany>35th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/jfk-bio">
+            <GameBlock style={jfkImage}>
+              <GameInfo>
+                <GameName>John F. Kennedy</GameName>
+                <GameCompany>35th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/johnson-bio">
-          <GameBlock style={johnsonImage}>
-            <GameInfo>
-              <GameName>Lyndon Johnson</GameName>
-              <GameCompany>36th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/johnson-bio">
+            <GameBlock style={johnsonImage}>
+              <GameInfo>
+                <GameName>Lyndon Johnson</GameName>
+                <GameCompany>36th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/nixon-bio">
-          <GameBlock style={nixonImage}>
-            <GameInfo>
-              <GameName>Richard Nixon</GameName>
-              <GameCompany>37th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/nixon-bio">
+            <GameBlock style={nixonImage}>
+              <GameInfo>
+                <GameName>Richard Nixon</GameName>
+                <GameCompany>37th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/ford-bio">
-          <GameBlock style={fordImage}>
-            <GameInfo>
-              <GameName>Gerald R. Ford</GameName>
-              <GameCompany>38th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/ford-bio">
+            <GameBlock style={fordImage}>
+              <GameInfo>
+                <GameName>Gerald R. Ford</GameName>
+                <GameCompany>38th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/carter-bio">
-          <GameBlock style={carterImage}>
-            <GameInfo>
-              <GameName>Jimmy Carter</GameName>
-              <GameCompany>39th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/carter-bio">
+            <GameBlock style={carterImage}>
+              <GameInfo>
+                <GameName>Jimmy Carter</GameName>
+                <GameCompany>39th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/reagan-bio">
-          <GameBlock style={reaganImage}>
-            <GameInfo>
-              <GameName>Ronald Reagan</GameName>
-              <GameCompany>40th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/reagan-bio">
+            <GameBlock style={reaganImage}>
+              <GameInfo>
+                <GameName>Ronald Reagan</GameName>
+                <GameCompany>40th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/bush-bio">
-          <GameBlock style={bushImage}>
-            <GameInfo>
-              <GameName>George H.W. Bush</GameName>
-              <GameCompany>41st President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/bush-bio">
+            <GameBlock style={bushImage}>
+              <GameInfo>
+                <GameName>George H.W. Bush</GameName>
+                <GameCompany>41st President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/clinton-bio">
-          <GameBlock style={clintonImage}>
-            <GameInfo>
-              <GameName>Bill Clinton</GameName>
-              <GameCompany>42nd President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/clinton-bio">
+            <GameBlock style={clintonImage}>
+              <GameInfo>
+                <GameName>Bill Clinton</GameName>
+                <GameCompany>42nd President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/wbush-bio">
-          <GameBlock style={wbushImage}>
-            <GameInfo>
-              <GameName>George W. Bush</GameName>
-              <GameCompany>43rd President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/wbush-bio">
+            <GameBlock style={wbushImage}>
+              <GameInfo>
+                <GameName>George W. Bush</GameName>
+                <GameCompany>43rd President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/obama-bio">
-          <GameBlock style={obamaImage}>
-            <GameInfo>
-              <GameName>Barack Obama</GameName>
-              <GameCompany>44th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
+          <StyledLink to="/obama-bio">
+            <GameBlock style={obamaImage}>
+              <GameInfo>
+                <GameName>Barack Obama</GameName>
+                <GameCompany>44th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
 
-        <StyledLink to="/trump-bio">
-          <GameBlock style={trumpImage}>
-            <GameInfo>
-              <GameName>Donald Trump</GameName>
-              <GameCompany>45th President</GameCompany>
-            </GameInfo>
-          </GameBlock>
-        </StyledLink>
-      </HomeWrapper>
+          <StyledLink to="/trump-bio">
+            <GameBlock style={trumpImage}>
+              <GameInfo>
+                <GameName>Donald Trump</GameName>
+                <GameCompany>45th President</GameCompany>
+              </GameInfo>
+            </GameBlock>
+          </StyledLink>
+        </HomeWrapper>
+        <Credits />
+      </Outerwrapper>
     );
   }
 }
+
+const Outerwrapper = styled.div`
+  position: relative;
+`;
 
 const HomeWrapper = styled.div`
   padding: 50px;

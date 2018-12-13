@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/trump1.jpg";
 
 class Accomplishments extends Component {
   render() {

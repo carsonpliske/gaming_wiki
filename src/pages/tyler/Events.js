@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/tyler1.jpg";
+import { Date, Subhead } from "../../styles";
 
 class Events extends Component {
   render() {
@@ -10,23 +11,25 @@ class Events extends Component {
         <Menu />
         <Headline>John Tyler:</Headline>
         <Topic>Events</Topic>
-        <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
-        </Text>
+
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>
+          "I contend that the strongest of all governments is that which is most
+          free. "
+        </Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Date>03/1842: Commonwealth v. Hunt</Date>
+          The Massachusetts Supreme Court establishes the legality of labor
+          unions, including the right for workers to strike, in the case of
+          Commonwealth v. Hunt.
+          <Date>08/09/1842: Webster-Ashburton Treaty</Date>
+          The signing of the Webster-Ashburton Treaty normalizes U.S.-British
+          relations by adjusting the Maine-Brunswick border, settling boundary
+          issues around western Lake Superior, and resurveying numerous smaller
+          borders.
+          <Date>04/12/1844: The Texas Annexation Treaty</Date>The Texas
+          Annexation Treaty is signed by the United States and the Republic of
+          Texas.
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +54,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

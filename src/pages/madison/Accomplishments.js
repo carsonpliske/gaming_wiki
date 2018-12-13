@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/madison1.jpg";
+import { Date, Subhead } from "../../styles";
 
 class Accomplishments extends Component {
   render() {
@@ -10,23 +11,30 @@ class Accomplishments extends Component {
         <Menu />
         <Headline>James Madison:</Headline>
         <Topic>Accomplishments</Topic>
-        <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
-        </Text>
+
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>
+          “I believe there are more instances of the abridgment of the freedom
+          of the people by gradual and silent encroachments of those in power
+          than by violent and sudden usurpations.”{" "}
+        </Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Date>01/10/1812: Army bill</Date>
+          Congress passes an Army bill to enlarge the second regular army to
+          25,000. The increase in manpower is far greater than Madison's request
+          -- he had asked for a force of 10,000 -- but the bill provides less
+          flexibility than Madison had requested. Amidst disagreements between
+          Madison's administration and Congress, modifications are made to the
+          legislation over the summer.
+          <Date>04/15/1812: Louisiana</Date> Louisiana is admitted to the nation
+          as the eighteenth state of the Union.
+          <Date>01/07/1815: Bank bill vetoed</Date>The House of Representatives
+          passes an amended bank bill as a compromise between Federalists and
+          anti-bank Republicans. The bill is nevertheless unsatisfactory to
+          Madison and Secretary of the Treasury Dallas. Madison vetoes the bank
+          bill on January 30.
+          <Date>04/19/1816: Indiana becomes a state</Date>
+          Madison signs a bill admitting Indiana to statehood.
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +59,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

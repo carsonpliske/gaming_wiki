@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/ford1.jpg";
+import { Date, Subhead } from "../../styles";
 
 class Accomplishments extends Component {
   render() {
@@ -10,23 +11,32 @@ class Accomplishments extends Component {
         <Menu />
         <Headline>General R. Ford:</Headline>
         <Topic>Accomplishments</Topic>
-        <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
-        </Text>
+
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>
+          "Never be satisfied with less than your very best effort. If you
+          strive for the top and miss, you'll still 'beat the pack.'"
+        </Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Date>09/30/1974: Economic Policy Board formed</Date>Ford forms the
+          Economic Policy Board, which will oversee all aspects of economic
+          policy.
+          <Date>10/15/1974: Federal Elections Campaign Act</Date>Ford signs the
+          Federal Elections Campaign Act of 1974, the most significant attempt
+          at campaign finance reform since the 1920s.
+          <Date>1/01/1975: Privacy Act of 1974</Date>
+          Ford signs the Privacy Act of 1974, ensuring the right of Americans to
+          individual privacy.
+          <Date>03/29/1975: Tax Reduction Act of 1975</Date>Ford tells the
+          nation he will reluctantly sign the Tax Reduction Act of 1975, which
+          calls for a $22.8 billion tax cut.
+          <Date>12/22/1975: Energy Policy Conservation Act</Date>Ford signs the
+          Energy Policy Conservation Act.
+          <Date>09/13/1976: Ford makes fifty-sixth veto</Date>
+          Ford signs the “sunshine” law and vetoes government funding for a
+          prototype electrical automobile engine, which Congress and the Senate
+          override soon thereafter. The veto marks Ford's fifty-six while in
+          office.
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +61,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

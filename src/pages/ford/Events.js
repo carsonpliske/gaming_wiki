@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/ford1.jpg";
+import { Date, Subhead } from "../../styles";
 
 class Events extends Component {
   render() {
@@ -10,23 +11,22 @@ class Events extends Component {
         <Menu />
         <Headline>General R. Ford:</Headline>
         <Topic>Events</Topic>
-        <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
-        </Text>
+
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>
+          "Never be satisfied with less than your very best effort. If you
+          strive for the top and miss, you'll still 'beat the pack.'"
+        </Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Date>03/27/1975: Saigon falls, America withdraws</Date>Following the
+          fall of the city of Ban Me Thout, Hue, and Danang, the city of Saigon
+          falls to the North Vietnamese. The Ford administration evacuates
+          remaining Americans and troops from the capital city.
+          <Date>05/14/1975: Airstrikes on Cambodia</Date>Marines move onto Koh
+          Tang, an island off the shore of Cambodia believed to hold the
+          captured sailors of the Mayaguez. Fierce fighting kills fifteen
+          Marines, but the sailors are not found. Ford orders airstrikes on the
+          Cambodian mainland. At 10:35 PM, the crew of the Mayaguez is released.
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +51,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

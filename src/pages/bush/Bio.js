@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/bush1.jpg";
+import { Item, Subhead } from "../../styles";
 
 class Bio extends Component {
   render() {
@@ -11,22 +12,42 @@ class Bio extends Component {
         <Headline>George H.W. Bush:</Headline>
         <Topic>Bio</Topic>
         <Text>
-          BIOS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          George Herbert Walker Bush was born at 173 Adams Street in Milton,
+          Massachusetts on June 12, 1924 to Prescott Sheldon Bush and Dorothy
+          (Walker) Bush. The Bush family moved from Milton to Greenwich,
+          Connecticut shortly after his birth. Bush was named after his maternal
+          grandfather George Herbert Walker, who was known as "Pop", and young
+          Bush was called "Poppy" as a tribute to his namesake. Bush began his
+          formal education at the Greenwich Country Day School, then attended
+          Phillips Academy in Andover, Massachusetts beginning in 1938, where he
+          held a number of leadership positions which included president of the
+          senior class, secretary of the student council, president of the
+          community fund-raising group, a member of the editorial board of the
+          school newspaper, and captain of the varsity baseball and soccer
+          teams.
         </Text>
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>
+          "No problem of human making is too great to be overcome by human
+          ingenuity, human energy, and the untiring hope of the human spirit."
+        </Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Item>
+            <strong>Born:</strong> June 12, 1924 Milton, Massachusetts, U.S.
+          </Item>
+
+          <Item>
+            <strong>Died:</strong> November 30, 2018 (aged 94) Houston, Texas,
+            U.S.
+          </Item>
+
+          <Item>
+            <strong>Political Party:</strong> Republican
+          </Item>
+
+          <Item>
+            <strong>In Office:</strong> January 20, 1989 – January 20, 1993
+          </Item>
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +72,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

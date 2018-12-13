@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
 import somename from "./images/washington-frown.jpg";
+import { Item, Subhead } from "../../styles";
 
 class Bio extends Component {
   render() {
@@ -51,11 +52,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

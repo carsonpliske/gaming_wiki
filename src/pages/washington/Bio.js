@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
 import somename from "./images/washington-frown.jpg";
+import { Item, Subhead } from "../../styles";
 
 class Bio extends Component {
   render() {
@@ -18,7 +19,7 @@ class Bio extends Component {
           his father died when he was 11 years old.
         </Text>
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>“It is better to offer no excuse than a bad one.”</Subhead>
         <Text>
           <Item>
             <strong>Born:</strong> February 22, 1732 Westmoreland County,
@@ -48,15 +49,6 @@ const AboutWrapper = styled.div`
   margin: 0 auto;
 `;
 
-const Item = styled.p`
-  position: relative;
-  padding: 10px 0;
-  border-top: #ccc 1px solid;
-  margin: 0;
-  &:first-of-type {
-    border-top: none;
-  }
-`;
 const Headline = styled.h1`
   font-size: 50px;
   line-height: 30px;
@@ -70,11 +62,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

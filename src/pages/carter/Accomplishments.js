@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/carter1.jpg";
+import { Date, Subhead } from "../../styles";
 
 class Accomplishments extends Component {
   render() {
@@ -10,23 +11,27 @@ class Accomplishments extends Component {
         <Menu />
         <Headline>Jimmy Carter:</Headline>
         <Topic>Accomplishments</Topic>
-        <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
-        </Text>
+
         <Photo src={somename} alt="washiongton" />
         <Subhead>1768 election</Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Date>2/02/1977: Emergency Natural Gas Act</Date>Congress passes
+          Emergency Natural Gas Act, authorizing the President to deregulate
+          natural gas prices due to a shortage in supply. Carter signs the bill
+          and announces plans to present an energy program to Congress. He later
+          proposes the establishment of a cabinet-level Department of Energy.
+          <Date>06/07/1979: MX missile approved</Date>Carter approves
+          development of the MX missile.
+          <Date>06/18/1979: Strategic Arms Limitation Treaty</Date>
+          Carter signs the second Strategic Arms Limitation Treaty (SALT II)
+          with the USSR. The U.S. Senate never ratifies the controversial
+          treaty, although both nations voluntarily comply with its terms.
+          <Date>10/17/1979: Department of Education established</Date>Carter
+          signs a bill establishing the Department of Education and appoints
+          Shirley Hufstedler as its secretary.
+          <Date>07/25/1980: Limiting nuclear war</Date>Carter signs Presidential
+          Directive 59 advocating a strategy for fighting a “limited” nuclear
+          war.
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +56,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

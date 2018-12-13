@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/quincyadams1.jpg";
+import { Date, Subhead } from "../../styles";
 
 class Events extends Component {
   render() {
@@ -10,23 +11,31 @@ class Events extends Component {
         <Menu />
         <Headline>John Quincy Adams:</Headline>
         <Topic>Events</Topic>
-        <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
-        </Text>
+
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>
+          “Courage and perseverance have a magical talisman, before which
+          difficulties disappear and obstacles vanish into air.”
+        </Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Date>10/26/1825: Erie Canal Completed</Date>
+          The first passage on the 363 mile-long Erie Canal is completed from
+          Lake Erie to New York City, linking the Atlantic and trans-Atlantic
+          marketplaces with growing agricultural production in the Northwest
+          states. Construction of the canal began in 1817. During his
+          presidential term, Adams strongly supports national planning of and
+          the use of national funds for an improved transportation
+          infrastructure.
+          <Date>11/1826: Resolution of war damages</Date> Under the mediation of
+          Czar Nicholas I, President Adams finalizes a settlement with the
+          British over restitution for damages incurred during the War of 1812,
+          left unresolved by the Treaty of Ghent.
+          <Date>03/1827: Ports closed to British</Date>Adams proclaims all
+          American ports closed to trade with British colonies, suspending
+          disagreements from an era of protracted contention with the British
+          over tariffs, navigation and duties. Adams's declaration embodies his
+          response to a rising Continental cartel of exclusive trading
+          relationships.
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +60,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/johnson1.jpg";
+import { Date, Subhead } from "../../styles";
 
 class Accomplishments extends Component {
   render() {
@@ -10,23 +11,24 @@ class Accomplishments extends Component {
         <Menu />
         <Headline>Lyndon Johnson:</Headline>
         <Topic>Accomplishments</Topic>
-        <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
-        </Text>
+
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>
+          “Yesterday is not ours to recover, but tomorrow is ours to win or
+          lose.”{" "}
+        </Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Date>04/11/1965: Elementary and Secondary Education Act</Date>Johnson
+          signs the Elementary and Secondary Education Act.
+          <Date>07/30/1965: Medicare, Medicaid created</Date>
+          Johnson signs legislation creating Medicare and Medicaid.
+          <Date>08/05/1965: Voting Rights Act becomes law</Date>Johnson signs
+          the Voting Rights Act into law.
+          <Date>02/10/1967: Twenty-Fifth Amendment ratified</Date>
+          The Twenty-Fifth Amendment to the Constitution is ratified, providing
+          rules of succession upon the death or incapacitation of the President,
+          and enabling the President to appoint a new vice-president in the case
+          of a vacancy.
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +53,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/h_harrison1.jpg";
+import { Date, Subhead } from "../../styles";
 
 class Accomplishments extends Component {
   render() {
@@ -10,23 +11,19 @@ class Accomplishments extends Component {
         <Menu />
         <Headline>William H. Harrison:</Headline>
         <Topic>Accomplishments</Topic>
-        <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
-        </Text>
+
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>
+          "The liberties of a people depend on their own constant attention to
+          its preservation."
+        </Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Date>03/04/1841: William Henry Harrison inaugurated</Date>
+          William Henry Harrison inaugurated as the ninth President of the
+          United States.
+          <Date>4/04/1841: Harrison dies of pneumonia</Date> Harrison dies of
+          pneumonia only one month after his inauguration, making him the first
+          President to die while in office.
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +48,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/jfk1.jpg";
+import { Date, Subhead } from "../../styles";
 
 class Accomplishments extends Component {
   render() {
@@ -10,23 +11,34 @@ class Accomplishments extends Component {
         <Menu />
         <Headline>John F. Kennedy:</Headline>
         <Topic>Accomplishments</Topic>
-        <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
-        </Text>
+
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>
+          "Ask not what your country can do for you, but what you can do for
+          your country."
+        </Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Date>04/15/1961: Bay of Pigs</Date>A U.S.-sponsored invasion of Cuba
+          at the Bay of Pigs fails. With inadequate support and facing an
+          overwhelming force, the CIA-trained brigade of anti-Castro exiles is
+          defeated in a few days. Kennedy takes responsibility for the disaster.
+          <Date>05/25/1961: Kennedy plans a man on the moon</Date>
+          In an address to Congress, Kennedy pledges that the Unites States will
+          land a man on the moon by the end of the decade.
+          <Date>02/03/1962: End trade with Cuba</Date>Kennedy halts virtually
+          <Date>02/03/1962: 10/28/1962: Cuban Missile Crisis resolved</Date>
+          After thirteen days, the Cuban Missile Crisis is resolved. The United
+          States will pledge not to invade Cub (and secretly agrees to remove
+          missiles from Turkey), in exchange for the removal of the Soviet
+          weapons.
+          <Date>10/07/1963: Kennedy signs nuclear test-ban</Date>Kennedy signs a
+          limited nuclear test-ban treaty with the Soviet Union and the United
+          Kingdom.
+          <Date>11/22/1963: Kennedy shot in Dallas</Date>Kennedy is assassinated
+          while riding in a motorcade in Dallas, Texas. Lee Harvey Oswald is
+          arrested and accused of the crime. Vice President Lyndon Baines
+          Johnson is sworn in as the thirty-sixth President of the United States
+          following the assassination.
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +63,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

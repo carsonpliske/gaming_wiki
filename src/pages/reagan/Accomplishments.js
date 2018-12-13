@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/reagan1.jpg";
+import { Date, Subhead } from "../../styles";
 
 class Accomplishments extends Component {
   render() {
@@ -10,23 +11,24 @@ class Accomplishments extends Component {
         <Menu />
         <Headline>Ronald Reagan:</Headline>
         <Topic>Accomplishments</Topic>
-        <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
-        </Text>
+
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>
+          “Government exists to protect us from each other. Where government has
+          gone beyond its limits is in deciding to protect us from ourselves.”
+        </Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Date>08/13/1981: Cutting taxes</Date>Reagan signs a tax cut into law.
+          <Date>09/03/1982: Tax Equity and Fiscal Responsibility Act</Date>
+          Reagan signs the Tax Equity and Fiscal Responsibility Act (TEFRA).
+          <Date>04/20/1983: Social Security reform becomes law</Date>
+          Ford signs the Privacy Act of 1974, ensuring the right of Americans to
+          individual privacy.
+          <Date>10/22/1986: Tax code revised</Date>Reagan signs a revision of
+          the tax code into law.
+          <Date>02/03/1987: Water Quality Control Act</Date>Congress overrides
+          Reagan's veto of the Water Quality Control Act, allowing the EPA to
+          regulate pollutants in U.S. waters.
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +53,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

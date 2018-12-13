@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Menu from "./Menu";
-import somename from "./images/washington-frown.jpg";
+import somename from "./images/johnson1.jpg";
+import { Date, Subhead } from "../../styles";
 
 class Events extends Component {
   render() {
@@ -10,23 +11,19 @@ class Events extends Component {
         <Menu />
         <Headline>Lyndon Johnson:</Headline>
         <Topic>Events</Topic>
-        <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
-        </Text>
+
         <Photo src={somename} alt="washiongton" />
-        <Subhead>1768 election</Subhead>
+        <Subhead>
+          “Yesterday is not ours to recover, but tomorrow is ours to win or
+          lose.”{" "}
+        </Subhead>
         <Text>
-          EVENTS is the This is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageThis is the
-          about pageThis is the about pageThis is the about pageabout page
+          <Date>02/09/1965: Bombing begins in Vietnam</Date>Nine American
+          soldiers are killed in an attack on U.S. barracks in Pleiku, Vietnam.
+          Johnson begins the bombing of North Vietnam.
+          <Date>04/28/1965: Johnson sends troops to Dominican Republic</Date>
+          Johnson sends U.S. marines to the Dominican Republic to protect U.S.
+          citizens after a military coup and resulting Dominican Civil War.
         </Text>
       </AboutWrapper>
     );
@@ -51,11 +48,6 @@ const Topic = styled.h1`
 const Photo = styled.img`
   display: block;
   margin: 0 auto;
-`;
-
-const Subhead = styled.h3`
-  font-size: 24px;
-  border-bottom: 1px solid;
 `;
 
 const Text = styled.p`

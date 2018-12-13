@@ -2,115 +2,57 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../images/gw-logo.png";
-import TopMenu from "./TopMenu";
-import blackops2header from "../images/blackops2header.jpg";
-import blackops3header from "../images/blackops3header.png";
-import assassinscreedheader from "../images/assassinscreedheader.jpg";
-import borderlandsheader from "../images/borderlandsheader.jpg";
-
-function styleHeader(theme) {
-  switch (theme) {
-    case "blackops2":
-      return (
-        <HeaderWrapperbo2>
-          <Link to="/">
-            <Logo src={logo} alt="logo" />
-          </Link>
-          <TopMenu />
-        </HeaderWrapperbo2>
-      );
-    case "blackops3":
-      return (
-        <HeaderWrapperbo3>
-          <Link to="/">
-            <Logo src={logo} alt="logo" />
-          </Link>
-          <TopMenu />
-        </HeaderWrapperbo3>
-      );
-    case "assassins":
-      return (
-        <HeaderWrapperassassins>
-          <Link to="/">
-            <Logo src={logo} alt="logo" />
-          </Link>
-          <TopMenu />
-        </HeaderWrapperassassins>
-      );
-    case "borderlands":
-      return (
-        <HeaderWrapperborderlands>
-          <Link to="/">
-            <Logo src={logo} alt="logo" />
-          </Link>
-          <TopMenu />
-        </HeaderWrapperborderlands>
-      );
-    default:
-      return (
-        <HeaderWrapper>
-          <Link to="/">
-            <Logo src={logo} alt="logo" />
-          </Link>
-          <TopMenu />
-        </HeaderWrapper>
-      );
-  }
-}
+import flag from "../images/flag.jpg";
 
 class Header extends Component {
   render() {
     const { theme } = this.props;
-    return styleHeader(theme);
+    return (
+      <HeaderFlag>
+        <Link to="/">
+          <Screen />
+          <Title>UNITED STATES PRESIDENTS</Title>
+        </Link>
+      </HeaderFlag>
+    );
   }
 }
 
-const HeaderWrapper = styled.div`
-  background-color: rgba(238, 238, 238, 0.993);
+const HeaderFlag = styled.div`
+  position: relative;
+  background: url(${flag});
+  background-size: cover;
+  background-position: center;
   height: 100px;
-  padding: 20px;
+  padding: 0px;
   color: rgb(0, 0, 0);
   box-shadow: 0px 2px 8px rgb(90, 89, 89);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  a {
+    text-decoration: none;
+  }
 `;
 
-const HeaderWrapperbo2 = styled.div`
-  background: url(${blackops2header});
-  height: 100px;
-  padding: 20px;
-  color: rgb(0, 0, 0);
-  box-shadow: 0px 2px 8px rgb(90, 89, 89);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+const Screen = styled.div`
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 `;
 
-const HeaderWrapperbo3 = styled.div`
-  background: url(${blackops3header});
-  height: 100px;
-  padding: 20px;
-  color: rgb(0, 0, 0);
-  box-shadow: 0px 2px 8px rgb(90, 89, 89);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-`;
-const HeaderWrapperassassins = styled.div`
-  background: url(${assassinscreedheader});
-  height: 100px;
-  padding: 20px;
-  color: rgb(0, 0, 0);
-  box-shadow: 0px 2px 8px rgb(90, 89, 89);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-`;
-const HeaderWrapperborderlands = styled.div`
-  background: url(${borderlandsheader});
-  height: 100px;
-  padding: 20px;
-  color: rgb(0, 0, 0);
-  box-shadow: 0px 2px 8px rgb(90, 89, 89);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+const Title = styled.h2`
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #fccd84;
+  font-family: Geneva, Times, serif;
+  letter-spacing: 4px;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 30px;
 `;
 
 const Logo = styled.img`
